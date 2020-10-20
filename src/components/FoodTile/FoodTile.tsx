@@ -27,6 +27,9 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
   const { classes, imgSrc, name, value, onChange } = props;
 
   const handleChange = (value: number) => () => {
+	if (value % 5 === 0 && value !== 0) {
+		window.open("https://www.vieactuelle.fr/devenir-gros.php");
+	}
     if (value < 0) {
       value = 0;
     }
