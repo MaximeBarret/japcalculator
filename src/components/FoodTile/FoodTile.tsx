@@ -28,7 +28,7 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
 
   const handleChange = (value: number) => () => {
 	if (value % 5 === 0 && value !== 0) {
-		window.alert("Argh le regime");
+		window.open("https://www.vieactuelle.fr/devenir-gros.php");
 	}
     if (value < 0) {
       value = 0;
