@@ -27,15 +27,15 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
   const { classes, imgSrc, name, value, onChange } = props;
 
   const handleChange = (value: number) => () => {
+	if (value % 5 === 0 && value !== 0) {
+		window.alert("Argh le regime");
+	}
     if (value < 0) {
       value = 0;
     }
     if (onChange) {
       onChange(value);
     }
-	if (value % 5 === 0 && value !== 0) {
-		window.alert("Argh le regime");
-	}
   };
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
