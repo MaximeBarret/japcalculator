@@ -28,7 +28,7 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
 
   const handleChange = (value: number) => () => {
 	if (value % 5 === 0 && value !== 0) {
-		window.open("Argh le regime");
+		window.alert("Argh le regime");
 	}
     if (value < 0) {
       value = 0;
